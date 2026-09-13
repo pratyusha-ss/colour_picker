@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Color Quest 🎨</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <div class="top">
+            <span>🎨 COLOR QUEST</span>
+            <span id="round">ROUND 1</span>
+        </div>
+
+        <h1>Can you match the color?</h1>
+
+        <p class="subtitle">
+            Get as close as you can to the secret color ✨
+        </p>
+
+        <div class="target-area">
+
+            <p>🎯 TARGET COLOR</p>
+
+            <div id="targetColor"></div>
+
+        </div>
+
+        <div class="picker-area">
+
+            <p>Choose your color</p>
+
+            <input
+                type="color"
+                id="colorPicker"
+                value="#a78bfa"
+            >
+
+            <div id="yourColor"></div>
+
+        </div>
+
+        <button id="checkButton" onclick="checkColor()">
+            ✨ CHECK MY COLOR
+        </button>
+
+        <div id="result">
+
+            <h2 id="scoreText">Your score</h2>
+
+            <p id="message"></p>
+
+        </div>
+
+        <div class="stats">
+
+            <div>
+                <span>🏆</span>
+                <strong id="bestScore">0</strong>
+                <small>BEST</small>
+            </div>
+
+            <div>
+                <span>🔥</span>
+                <strong id="streak">0</strong>
+                <small>STREAK</small>
+            </div>
+
+            <div>
+                <span>🎯</span>
+                <strong id="totalRounds">0</strong>
+                <small>ROUNDS</small>
+            </div>
+
+        </div>
+
+        <button
+            id="nextButton"
+            onclick="newRound()"
+        >
+            🎲 NEW ROUND
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
